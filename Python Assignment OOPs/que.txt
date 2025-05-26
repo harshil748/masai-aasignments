@@ -1,0 +1,28 @@
+You're building a simulation of a Smart Home system where different smart devices (like lights, fans, and ACs) can be controlled. Each device should have basic functionalities like turning on, turning off, and showing the device status. However, the internal working (like power consumption logic, cooling intensity, etc.) is hidden from the user.
+
+Requirements:
+Create an abstract class SmartDevice with:
+
+a constructor to set the device name.
+an abstract method operate() to simulate device-specific behavior.
+a concrete method show_status() that prints whether the device is ON or OFF.
+Implement the following concrete classes that inherit from SmartDevice:
+
+SmartLight: Turns on the light and sets brightness level (default 70%).
+SmartFan: Turns on the fan and sets speed (default medium).
+SmartAC: Turns on the AC and sets temperature (default 24°C).
+Use encapsulation:
+
+All device states (is_on, brightness, speed, temperature) must be private.
+Provide appropriate getter/setter methods to access and modify these values safely.
+Demonstrate the usage:
+
+Create at least one object of each type.
+Call operate() and show_status() on each.
+Attempt to directly modify private attributes (should not work).
+Use setters to change brightness/speed/temperature and display updated values via getters.
+Evaluation Criteria:
+Proper use of abstract classes and methods.
+Correct implementation of encapsulation using private members and getters/setters.
+Demonstration of polymorphism via the operate() method.
+Attempt to access private variables directly should raise an AttributeError.
